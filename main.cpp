@@ -6,6 +6,7 @@
 #include "Headers/Dwarf.hpp"
 #include "Headers/Nobbs.hpp"
 #include "Headers/Citizen.hpp"
+#include "Headers/Wolf.hpp"
 #include "vector"
 #include <iostream>
 
@@ -19,6 +20,10 @@ int main(){
     Citizen *Yael = new Zombie("Yael");
     Citizen *Destiny = new Dwarf("Destiny");
     Citizen *Alex = new Nobbs("Alex");
+
+    Werewolf *wolfAlexa = (Werewolf *) Alexa;
+    wolfAlexa->growl();
+    wolfAlexa->howl();
 
     Citizen* peopleArr[7] = {Alexa, Monique, Jada, Lexie, Yael, Destiny, Alex};
 
